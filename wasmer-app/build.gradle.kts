@@ -9,8 +9,9 @@ java {
     }
 }
 
-application { mainClass = "org.example.AppKt" }
+application { mainClass = "org.wasmer.kotlin.AppKt" }
 
 dependencies {
     testImplementation(kotlin("test"))
+    implementation(fileTree("libs") { include("*.jar") })
 }

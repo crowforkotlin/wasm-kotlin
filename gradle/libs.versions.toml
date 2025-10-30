@@ -3,9 +3,10 @@
 
 [versions]
 kotlin = "2.2.21"
-
+wasmer = "0.3.0"
 
 [libraries]
+wasmer-windows = { module = "org.wasmer:wasmer-jni-amd64-windows", version.ref = "wasmer" }
 
 [plugins]
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }

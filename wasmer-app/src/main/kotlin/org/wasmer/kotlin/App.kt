@@ -3,5 +3,32 @@
  */
 package org.wasmer.kotlin
 
+import jdk.internal.loader.Resource
+import jdk.internal.org.jline.utils.Colors.h
+import org.wasmer.Instance
+
+class App {
+
+}
+
+// 假设你的资源文件路径是 src/main/resources/config/app.properties
+fun getResourceStream(fileName: String): java.io.InputStream? {
+    return Thread.currentThread().contextClassLoader.getResourceAsStream(fileName)
+}
+
+fun readResourceFile(fileName: String): ByteArray {
+    val inputStream = getResourceStream(fileName)
+    var content: ByteArray? = null
+    inputStream?.use { input ->
+        content = input.readBytes()
+    }
+    return content ?: error("文件未找到")
+}
+
 fun main() {
+    val wasmContent = readResourceFile("wasm/test.wasm")
+    println(wasmContent.size)
+    val instance: Instance = Instance(wasmContent)
+    val result = instance.exports.getFunction("sum").apply(1, 2)
+    println(result)
 }
