@@ -5,13 +5,13 @@
 
 # wasmedge 
 > 编译过于复杂，Android支持看起来有demo，试了下多平台的编译，windows遇到问题处理个人觉得挺棘手的
-- [https://github.com/WasmEdge/WasmEdge](wasmedge)
-- [https://github.com/second-state/wasmedge-android](wasmedge-android-demo)
+- (wasmedge)[https://github.com/WasmEdge/WasmEdge]
+- (wasmedge-android-demo)[https://github.com/second-state/wasmedge-android]
 
 # wasm-micro-runtime
 > 描述是支持多端的，但是没有java sample，可能需要用到kn？
-- [https://github.com/bytecodealliance/wasm-micro-runtime](wasm-micro-runtime)
+- (wasm-micro-runtime)[https://github.com/bytecodealliance/wasm-micro-runtime]
 
 # wasm3
 > 一年没更新了，看issue问题有很多，暂定
-- [https://github.com/wasm3/wasm3](wasm3)
+- (wasm3)[https://github.com/wasm3/wasm3]
