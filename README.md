@@ -13,5 +13,5 @@
 - [wasm-micro-runtime](https://github.com/bytecodealliance/wasm-micro-runtime)
 
 # wasm3
-> `Has not been updated for a year, and the issues list suggests numerous problems. Tentatively rejected.`
+> Has not been updated for a year, and the issues list suggests numerous problems. Tentatively rejected.
 - [wasm3](https://github.com/wasm3/wasm3)
